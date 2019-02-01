@@ -1,0 +1,7 @@
+<h2>The Tour Bus Includes:</h2>
+
+<ul>
+<% @bands.each do |band| %>
+  <li><a href="<%= band_url(band)%>"><%= band.name %></a></li>
+<% end  %>
+</ul>
